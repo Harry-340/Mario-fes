@@ -91,6 +91,6 @@ if (qblock && toast) {
     window.clearTimeout(qblock._resetTimer);
     qblock._resetTimer = window.setTimeout(() => {
       toast.classList.remove('is-visible');
-    }, 1800);
+    }, 2500);
   });
 }
