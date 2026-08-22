@@ -76,11 +76,13 @@ if (qblock && toast) {
     const messages = [
       '⭐︎コインゲット！',
       '＋1UP！！',
+      '力を合わせてスターを取り戻そう！'
       'もうネタ切れデス...',
       '本当にナイヨ',
       '......',
       'しつこいデスネ',
-      'クッパの名前の由来は韓国料理らしいヨ',
+      'あーもうわかったわかった、豆知識でも教えてあげヨウ。クッパの名前の由来は韓国料理らしいヨ',
+      '知らんケド...'
     ];
     toast.textContent = messages[Math.min(coinCount - 1, messages.length - 1)];
     toast.classList.add('is-visible');
