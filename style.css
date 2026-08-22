@@ -390,7 +390,7 @@ a{ color: inherit; }
   display: grid; grid-template-columns: 1.1fr 1fr; gap: 2rem; align-items: start;
 }
 @media (max-width: 760px){ .access__grid{ grid-template-columns: 1fr; } }
-
+ 
 .access__list{ margin: 0 0 1.2rem; }
 .access__list > div{
   display: flex; gap: 1rem; padding: .6rem 0; border-bottom: 2px dashed rgba(44,24,16,.2);
@@ -398,12 +398,40 @@ a{ color: inherit; }
 .access__list dt{ min-width: 6.5em; font-weight: 700; color: var(--red-dark); }
 .access__list dd{ margin: 0; }
 .access__route{ background: var(--cream); border: 3px solid var(--outline); border-radius: var(--radius-s); padding: 1rem; }
-
+ 
 .access__map{ text-align: center; }
 .map-svg{ width: 100%; max-width: 360px; border: 4px solid var(--outline); border-radius: var(--radius-m); box-shadow: var(--shadow-pixel); }
 .map-svg__label{ font-family: var(--font-display); font-size: 13px; fill: var(--outline); }
 .map-svg__label--sm{ font-size: 11px; }
+.map-svg__label--xs{ font-size: 9px; }
+.map-svg__floor{ font-size: 34px; fill: #fff; opacity: .5; }
+.map-svg__room--active{ fill: var(--gold); }
 .map-caption{ font-size: .8rem; opacity: .7; margin-top: .5rem; }
+ 
+/* =====================================================
+   注意事項
+===================================================== */
+.info__grid{
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+.info__card{
+  background: #fff; border: 3px solid var(--outline); border-radius: var(--radius-s);
+  padding: 1.2rem; box-shadow: var(--shadow-pixel);
+}
+.info__card h3{ margin: 0 0 .5rem; font-size: .95rem; }
+.info__card p{ margin: 0; font-size: .9rem; }
+ 
+/* =====================================================
+   フッター
+===================================================== */
+.site-footer{
+  text-align: center; padding: 2.4rem 1rem 3rem;
+  background: var(--outline); color: var(--cream);
+  font-size: .85rem;
+}
+.site-footer p{ margin: .3rem 0; }
+.site-footer__sub{ opacity: .7; font-size: .78rem; }
 
 /* =====================================================
    注意事項
