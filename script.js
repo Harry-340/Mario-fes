@@ -74,9 +74,9 @@ if (qblock && toast) {
     qblock.classList.add('is-hit');
 
     const messages = [
-      '★ スターピース獲得！',
-      '🍄 1UP！ もう一回叩いてみよう',
-      '✨ ボスクッパも気づいていないぞ…',
+      '⭐︎コインゲット！',
+      '＋1UP！！',
+      'もうネタ切れデス...',
     ];
     toast.textContent = messages[Math.min(coinCount - 1, messages.length - 1)];
     toast.classList.add('is-visible');
