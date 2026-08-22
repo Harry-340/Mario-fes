@@ -191,26 +191,58 @@
     <div class="access__grid">
       <div class="access__info">
         <dl class="access__list">
-          <div><dt>開催場所</dt><dd>北校舎 4階 HR310 教室</dd></div>
-          <div><dt>開催日時</dt><dd>9月19日(土) 9:30〜15:30<br>9月21日(月) 9:30〜15:00</dd></div>
-          <div><dt>目安待ち時間</dt><dd>混雑時 約3〜10分</dd></div>
-          <div><dt>対象</dt><dd>どなたでも参加OK（小さなお子様は保護者同伴）</dd></div>
+          <div><dt>開催場所</dt><dd>本校舎 4階 310教室</dd></div>
+          <div><dt>開催日時</dt><dd>11月2日(土) 9:30〜15:30<br>11月3日(日) 9:30〜15:00</dd></div>
+          <div><dt>目安待ち時間</dt><dd>混雑時 約10〜15分（当日教室前に表示あり）</dd></div>
+          <div><dt>対象</dt><dd>どなたでも参加OK（小さなお子様は保護者同伴で）</dd></div>
+          <div><dt>参加費</dt><dd>無料</dd></div>
         </dl>
-        <p class="access__route"><strong>行き方：</strong>高等部正門から入って左のB階段を4階まで登り、右手5つ目の教室です。下の簡易案内図をご確認ください。</p>
+        <p class="access__route"><strong>行き方：</strong>本校舎4階、B階段を上がってすぐの角の教室です。案内看板（クッパの絵）を目印にどうぞ。</p>
       </div>
       <div class="access__map" aria-hidden="true">
-        <svg viewBox="0 0 320 220" class="map-svg">
-          <rect x="0" y="0" width="320" height="220" fill="var(--sky)"></rect>
-          <rect x="10" y="150" width="300" height="60" fill="var(--ground)"></rect>
-          <rect x="40" y="40" width="240" height="120" fill="var(--block)" stroke="var(--outline)" stroke-width="4"></rect>
-          <text x="160" y="70" text-anchor="middle" class="map-svg__label">本校舎</text>
-          <rect x="60" y="90" width="50" height="55" fill="var(--pipe)" stroke="var(--outline)" stroke-width="3"></rect>
-          <text x="85" y="185" text-anchor="middle" class="map-svg__label map-svg__label--sm">正門</text>
-          <rect x="200" y="80" width="60" height="45" fill="var(--gold)" stroke="var(--outline)" stroke-width="3"></rect>
-          <text x="230" y="103" text-anchor="middle" class="map-svg__label map-svg__label--sm">3-2</text>
-          <path d="M85 145 L85 130 L230 130 L230 125" fill="none" stroke="var(--red)" stroke-width="4" stroke-dasharray="8 6"></path>
+        <svg viewBox="0 0 340 320" class="map-svg">
+          <rect width="340" height="320" fill="#6FA872"></rect>
+          <text x="300" y="150" text-anchor="middle" class="map-svg__label map-svg__floor">4F</text>
+ 
+          <!-- 上部の階段 -->
+          <rect x="26" y="14" width="52" height="52" fill="var(--cream)" stroke="var(--outline)" stroke-width="3"></rect>
+          <text x="52" y="45" text-anchor="middle" class="map-svg__label map-svg__label--xs">階段</text>
+ 
+          <!-- 縦の廊下（教室が並ぶ） -->
+          <rect x="82" y="14" width="60" height="52" class="map-svg__room map-svg__room--active" stroke="var(--outline)" stroke-width="3"></rect>
+          <text x="112" y="45" text-anchor="middle" class="map-svg__label map-svg__label--sm">310</text>
+ 
+          <rect x="82" y="66" width="60" height="48" fill="var(--cream)" stroke="var(--outline)" stroke-width="2"></rect>
+          <rect x="82" y="114" width="60" height="48" fill="var(--cream)" stroke="var(--outline)" stroke-width="2"></rect>
+ 
+          <rect x="82" y="162" width="60" height="48" fill="var(--cream)" stroke="var(--outline)" stroke-width="2"></rect>
+          <text x="112" y="191" text-anchor="middle" class="map-svg__label map-svg__label--xs">306</text>
+ 
+          <!-- B階段 -->
+          <rect x="82" y="210" width="60" height="44" fill="var(--cream)" stroke="var(--outline)" stroke-width="3"></rect>
+          <text x="112" y="235" text-anchor="middle" class="map-svg__label map-svg__label--xs">B階段</text>
+ 
+          <!-- 横の廊下（1階部分） -->
+          <rect x="142" y="254" width="34" height="40" fill="var(--cream)" stroke="var(--outline)" stroke-width="2"></rect>
+          <rect x="176" y="254" width="46" height="40" fill="var(--cream)" stroke="var(--outline)" stroke-width="2"></rect>
+          <text x="199" y="279" text-anchor="middle" class="map-svg__label map-svg__label--xs">305</text>
+          <rect x="222" y="254" width="70" height="40" fill="var(--cream)" stroke="var(--outline)" stroke-width="2"></rect>
+          <text x="257" y="279" text-anchor="middle" class="map-svg__label map-svg__label--xs">301</text>
+          <rect x="292" y="254" width="34" height="40" fill="var(--cream)" stroke="var(--outline)" stroke-width="3"></rect>
+ 
+          <!-- PS講堂 -->
+          <ellipse cx="90" cy="278" rx="62" ry="30" fill="var(--cream)" stroke="var(--outline)" stroke-width="3"></ellipse>
+          <text x="90" y="283" text-anchor="middle" class="map-svg__label map-svg__label--xs">PS講堂</text>
+ 
+          <!-- 310教室を指す矢印 -->
+          <path d="M232 40 L150 40" fill="none" stroke="var(--gold)" stroke-width="5" marker-end="url(#arrowhead)"></path>
+          <defs>
+            <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="var(--gold)"></path>
+            </marker>
+          </defs>
         </svg>
-        <p class="map-caption">※簡易案内図です。詳しくは当日の掲示をご確認ください。</p>
+        <p class="map-caption">※簡易案内図です（黄色の部屋が310教室）。詳しくは当日の掲示をご確認ください。</p>
       </div>
     </div>
   </section>
